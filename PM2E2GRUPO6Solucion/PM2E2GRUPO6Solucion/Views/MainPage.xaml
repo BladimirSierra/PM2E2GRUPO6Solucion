@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="PM2E2GRUPO6Solucion.MainPage"
+             BackgroundColor="#3B66FF">
+
+    <ContentPage.ToolbarItems >
+        <ToolbarItem 
+       Text="Nueva Ubicacion" x:Name="Toolbar01" Clicked="Toolbar01_Clicked">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+       
+            <StackLayout>
+                <video:VideoPlayer
+                x:Name="videoPlayer" 
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                HeightRequest="200" 
+                />
+
+                <Button Text="Grabar Video" 
+                    x:Name="btnGrabarVideo"
+                    Clicked="BtnGrabarVideo_Clicked"
+                    Background="white" 
+                    TextColor="Black" 
+                    CornerRadius="50"
+                    Margin="100,10,100,10"
+                    WidthRequest="100" />
+            </StackLayout>
+
+            <Label Text="Latitd actual:" FontAttributes="Bold" Margin="30,5,0,0"/>
+            <Entry 
+            Text="{Binding latitud}"  
+            x:Name="txtlatitud" 
+            Placeholder="Latitud" 
+            Keyboard="Text" 
+            Margin="30,0,30,0"  
+            FontSize="15" 
+            IsReadOnly="True"/>
+
+            <Label Text="Longitud actual:" FontAttributes="Bold" Margin="30,0,0,0"/>
+            <Entry 
+            Text="{Binding longitud}" 
+            x:Name="txtlongitud" 
+            Placeholder="Longitud" 
+            Keyboard="Text" 
+            Margin="30,0,30,0"  
+            FontSize="15" 
+            IsReadOnly="True"/>
+
+            <Label Text="Describa la ubicación:" FontAttributes="Bold" Margin="30,0,0,0"/>
+            <Editor 
+            Text="{Binding descripcionLarga}" 
+            x:Name="txtdescripcion" 
+            HeightRequest="50" 
+            Margin="30,0,30,0" 
+            Keyboard="Text" 
+            Placeholder="Describa la ubicación"  
+            FontSize="15"/>
+
+            <Grid Margin="20,0,20,0">
+                <Image Source="voz.png" Margin="30,30,30,30"/>
+                <Button Text="Grabar" Grid.Column="0" x:Name="btnGrabarAudio" Clicked="BtnGrabarAudio_Clicked"
+                WidthRequest="150" 
+                Margin="30,5,30,0"
+                CornerRadius="50"
+                BackgroundColor="green"/>
+                <Button Text="Detener" Grid.Column="1" x:Name="btnDetener" Clicked="BtnDetener_Clicked" IsEnabled="False"
+                WidthRequest="150" 
+                Margin="30,5,30,0"
+                CornerRadius="50"
+                
+                BackgroundColor="red"/>
+            </Grid>
+
+
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Button 
+                Text="Guardar" 
+                x:Name="BtnGuardar" 
+                Clicked="BtnGuardar_Clicked"  
+                HorizontalOptions="Center" 
+                Background="white" 
+                TextColor="Black" 
+                WidthRequest="150" 
+                Margin="20,5,0,0"
+                CornerRadius="50"/>
+
+                <Button 
+                Text="Ubicaciones Salvadas" 
+                x:Name="BtnUbicacion" 
+                Clicked="BtnUbicacion_Clicked"  
+                HorizontalOptions="Center" 
+                Background="white" 
+                TextColor="black" 
+                WidthRequest="150" 
+                Margin="20,5,20,0"
+                CornerRadius="50"/>
+            </StackLayout>
+    </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

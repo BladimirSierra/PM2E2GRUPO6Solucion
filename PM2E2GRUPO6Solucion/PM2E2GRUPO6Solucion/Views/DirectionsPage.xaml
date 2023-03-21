@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E2GRUPO6Solucion.Views.DirectionsPage"
+    BackgroundColor="white">
+    <StackLayout>
+
+        <Label Text="               Nombre                                        Latitud            Longitud" 
+                                   FontAttributes="Bold" TextColor="Black" />
+
+        <ListView x:Name="list" HorizontalOptions="FillAndExpand" Margin="10" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="{Binding descripcion}" 
+                                   FontAttributes="Bold" TextColor="black" />
+
+                            <Label Grid.Column="1" Text="{Binding latitud}" 
+                                   FontAttributes="Bold" TextColor="Blue" />
+
+                            <Label  Grid.Column="2" Text="{Binding longitud}" FontAttributes="Bold" 
+                                   TextColor="red" />
+
+                            <Label  Grid.Column="3" Text="" FontAttributes="Bold" 
+                                   TextColor="green" />
+
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+
+        </ListView>
+        <Button x:Name="btnupdate" Text="Actualizar Datos" Clicked="btnupdate_Clicked" CornerRadius="50" BackgroundColor="green" Margin="100,0,100,0"/>
+        <Button x:Name="btndelete" Text="Eliminar Datos" Clicked="btndelete_Clicked" CornerRadius="50" BackgroundColor="green" Margin="100,0,100,0"/>
+        <Button x:Name="btnmapa" Text="Ir a Mapa" Clicked="btnmapa_Clicked" CornerRadius="50" BackgroundColor="green" Margin="100,0,100,10" />
+
+    </StackLayout>
+</ContentPage>

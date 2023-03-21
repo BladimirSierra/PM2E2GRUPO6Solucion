@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PM2E2GRUPO6Solucion.Android", "PM2E2GRUPO6Solucion\PM2E2GRUPO6Solucion.Android\PM2E2GRUPO6Solucion.Android.csproj", "{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PM2E2GRUPO6Solucion", "PM2E2GRUPO6Solucion\PM2E2GRUPO6Solucion\PM2E2GRUPO6Solucion.csproj", "{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CB5833-70F3-481A-AA75-2E62CFF89EE9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E8FF2B-4857-4129-A5BE-B77816F24FD3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95FABBA2-B4A9-4F83-990D-C7561E2F3377}
+	EndGlobalSection
+EndGlobal
